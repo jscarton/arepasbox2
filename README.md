@@ -33,5 +33,5 @@ My multipurpose Vagrant Box with the following features:
 ## Contact Information
 
 	Open an issue or email me at jscarton@gmail.com
- 
+
 Feel free to fork and ask for new features. Enjoy!!!
