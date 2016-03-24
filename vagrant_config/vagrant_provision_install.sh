@@ -82,8 +82,12 @@ apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-
 apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev -y
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 \curl -sSL https://get.rvm.io | bash -s stable
-apt-get install ruby1.9.1-dev -y
-
+apt-get install ruby2.0 ruby2.0-dev -y
+rvm use --default 2.0
+echo "---------------------------------------------------------------"
+echo "USING RUBY VERSION"
+echo "---------------------------------------------------------------"
+ruby -v
 echo "---------------------------------------------------------------"
 echo "INSTALLING MAILCATCHER"
 echo "---------------------------------------------------------------"
