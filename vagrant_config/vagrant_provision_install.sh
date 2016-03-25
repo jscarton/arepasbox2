@@ -89,9 +89,11 @@ echo "USING RUBY VERSION"
 echo "---------------------------------------------------------------"
 ruby -v
 echo "---------------------------------------------------------------"
-echo "INSTALLING MAILCATCHER"
+echo "INSTALLING MAILHOG"
 echo "---------------------------------------------------------------"
-gem install mailcatcher
+wget https://github.com/mailhog/MailHog/releases/download/v0.2.0/MailHog_linux_amd64
+sudo mv MailHog_linux_amd64 /usr/bin/mailhog
+sudo chmod 755 /usr/bin/mailhog
 
 echo "---------------------------------------------------------------"
 echo "INSTALLING ELASTCSEARCH"
