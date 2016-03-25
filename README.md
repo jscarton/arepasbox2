@@ -18,7 +18,7 @@ My multipurpose Vagrant Box with the following features:
 
 * Redis
 
-* MailCatcher
+* MailHog
 
 * Elasticsearch (with kibana and sense)
 
