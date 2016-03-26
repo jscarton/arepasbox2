@@ -13,6 +13,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "ubuntu/trusty64"
 
+  # Box Name
+  config.vm.hostname="arepas.app"
+
   config.vm.provision :shell, path: "vagrant_config/vagrant_provision_install.sh"
 
   config.vm.provision :shell, path: "vagrant_config/vagrant_boot.sh", run: "always"
@@ -20,6 +23,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider "virtualbox" do |v|
     v.memory = 2048
   end
+
+
 
   # NETWORKING
   config.vm.network "private_network", ip: "192.168.56.101"
